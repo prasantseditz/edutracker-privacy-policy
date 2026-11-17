@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms of Service – EduTracker</title>
+    <style>
+        *, *::before, *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background-color: #f5f7fa;
+            color: #2d3748;
+            line-height: 1.7;
+            font-size: 16px;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 820px;
+            margin: 0 auto;
+            padding: 40px 24px 80px;
+        }
+
+        /* Top Navigation Bar */
+        .nav-bar {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            gap: 16px;
+            margin-bottom: 24px;
+            padding-bottom: 12px;
+            border-bottom: 1px solid #e2e8f0;
+            font-size: 14px;
+        }
+
+        .nav-bar a {
+            color: #4c51bf;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .nav-bar a:hover {
+            text-decoration: underline;
+        }
+
+        .nav-bar .active {
+            color: #2d3748;
+            pointer-events: none;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 48px;
+            padding-bottom: 32px;
+            border-bottom: 2px solid #e2e8f0;
+        }
+
+        .header .app-icon {
+            width: 72px;
+            height: 72px;
+            border-radius: 18px;
+            background: linear-gradient(135deg, #4c51bf, #6366f1);
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 16px;
+            box-shadow: 0 4px 12px rgba(76, 81, 191, 0.3);
+        }
+
+        .header h1 {
+            font-size: 28px;
+            font-weight: 700;
+            color: #1a202c;
+            margin-bottom: 4px;
+        }
+
+        .header .tagline {
+            font-size: 14px;
+            color: #718096;
+            font-weight: 500;
+            letter-spacing: 0.5px;
+        }
+
+        .meta {
+            display: flex;
+            justify-content: center;
+            gap: 16px;
+            margin-top: 16px;
+            flex-wrap: wrap;
+        }
+
+        .meta span {
+            font-size: 13px;
+            color: #718096;
+            background: #edf2f7;
+            padding: 4px 12px;
+            border-radius: 20px;
+        }
+
+        h2 {
+            font-size: 20px;
+            font-weight: 700;
+            color: #1a202c;
+            margin-top: 40px;
+            margin-bottom: 12px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #e2e8f0;
+        }
+
+        h3 {
+            font-size: 17px;
+            font-weight: 600;
+            color: #2d3748;
+            margin-top: 24px;
+            margin-bottom: 8px;
+        }
+
+        p {
+            margin-bottom: 14px;
+            color: #4a5568;
+        }
+
+        ul, ol {
+            margin-bottom: 14px;
+            padding-left: 24px;
+        }
+
+        li {
+            margin-bottom: 8px;
+            color: #4a5568;
+        }
+
+        li strong {
+            color: #2d3748;
+        }
+
+        .info-box {
+            background: #edf2f7;
+            border-left: 4px solid #4c51bf;
+            padding: 16px 20px;
+            border-radius: 0 8px 8px 0;
+            margin: 20px 0;
+        }
+
+        .info-box p {
+            margin-bottom: 6px;
+            font-size: 14px;
+            color: #4a5568;
+        }
+
+        .info-box p:last-child {
+            margin-bottom: 0;
+        }
+
+        .highlight-box {
+            background: #fffaf0;
+            border-left: 4px solid #dd6b20;
+            padding: 16px 20px;
+            border-radius: 0 8px 8px 0;
+            margin: 20px 0;
+        }
+
+        .highlight-box p {
+            margin-bottom: 6px;
+            font-size: 14px;
+            color: #7b341e;
+        }
+
+        .highlight-box p:last-child {
+            margin-bottom: 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 16px 0;
+            font-size: 14px;
+            background: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+        }
+
+        th, td {
+            text-align: left;
+            padding: 12px 16px;
+            border-bottom: 1px solid #e2e8f0;
+            color: #4a5568;
+        }
+
+        th {
+            background: #f7fafc;
+            font-weight: 600;
+            color: #2d3748;
+            font-size: 13px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 12px;
+            font-weight: 600;
+        }
+
+        .badge-free {
+            background: #e2e8f0;
+            color: #4a5568;
+        }
+
+        .badge-premium {
+            background: #feebc8;
+            color: #c05621;
+        }
+
+        footer {
+            margin-top: 48px;
+            padding-top: 24px;
+            border-top: 2px solid #e2e8f0;
+            text-align: center;
+        }
+
+        footer p {
+            font-size: 13px;
+            color: #a0aec0;
+        }
+
+        a {
+            color: #4c51bf;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 24px 16px 60px;
+            }
+
+            .header h1 {
+                font-size: 22px;
+            }
+
+            h2 {
+                font-size: 18px;
+            }
+
+            table {
+                font-size: 13px;
+            }
+
+            th, td {
+                padding: 10px 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <!-- Navigation Bar -->
+        <nav class="nav-bar">
+            <a href="index.html">Privacy Policy</a>
+            <span>•</span>
+            <span class="active">Terms of Service</span>
+            <span>•</span>
+            <a href="mailto:prasantagaraidgp7@gmail.com">Contact</a>
+        </nav>
+
+        <!-- Header -->
+        <div class="header">
+            <div class="app-icon">ET</div>
+            <h1>Terms of Service</h1>
+            <p class="tagline">EDUTRACKER – SMART TUITION &amp; STUDENT MANAGEMENT</p>
+            <div class="meta">
+                <span>Last Updated: November 17, 2026</span>
+                <span>Effective Date: July 15, 2026</span>
+                <span>Version 1.2</span>
+            </div>
+        </div>
+
+        <!-- 1. Acceptance of Terms -->
+        <h2>1. Acceptance of Terms</h2>
+        <p>Welcome to <strong>EduTracker</strong> (also referred to as "EduTrack", "the Application", "we", "us", or "our"), an educational tuition management and student record-tracking mobile application published and operated by <strong>PG Live</strong> ("Developer", "Trader").</p>
+        <p>By downloading, installing, accessing, or using EduTracker, or by clicking "I Agree" during account registration, you confirm that you have read, understood, and agree to be legally bound by these Terms of Service ("Terms") and our <a href="index.html">Privacy Policy</a>. If you do not agree with any part of these Terms, you must discontinue use and uninstall the Application immediately.</p>
+
+        <!-- 2. Developer & Trader Identification -->
+        <h2>2. Developer &amp; Trader Identification (Google Play &amp; EU DSA Compliance)</h2>
+        <p>In accordance with the <strong>European Union Digital Services Act (DSA)</strong>, the <strong>UK Digital Markets, Competition and Consumers Act (DMCCA)</strong>, and <strong>Google Play Trader Status</strong> declarations, the commercial operator and publisher of EduTracker is identified as follows:</p>
+        <div class="info-box">
+            <p><strong>Trade Name:</strong> PG Live</p>
+            <p><strong>Individual Developer:</strong> Prasanta Garai</p>
+            <p><strong>Primary Support Email:</strong> <a href="mailto:prasantagaraidgp7@gmail.com">prasantagaraidgp7@gmail.com</a></p>
+            <p><strong>Alternative Support Email:</strong> <a href="mailto:edutrackerbypg@gmail.com">edutrackerbypg@gmail.com</a></p>
+            <p><strong>Country of Establishment:</strong> India</p>
+            <p><strong>Application:</strong> EduTracker (Android App on Google Play Store)</p>
+            <p><strong>Trader Status:</strong> Declared Trader on Google Play Console (Commercial entity offering in-app digital subscriptions and ad-supported services)</p>
+        </div>
+
+        <!-- 3. Eligibility & Age Requirement (18+) -->
+        <h2>3. Eligibility &amp; Mandatory Age Requirement (18+)</h2>
+        <p>EduTracker is strictly an administrative and tuition management tool intended exclusively for adult educators, private tutors, coaching academy managers, and educational teachers.</p>
+        <div class="highlight-box">
+            <p><strong>Age Restriction:</strong> You must be at least <strong>18 years of age</strong> (or the age of legal majority in your jurisdiction) to create an account and use EduTracker.</p>
+            <p>In full compliance with <strong>Section 9 of the India Digital Personal Data Protection (DPDP) Act, 2023</strong> and the <strong>Google Play Families Policy</strong>, individuals under the age of 18 are not permitted to register an account.</p>
+        </div>
+        <p>By creating an account, you represent and warrant that you possess the full legal capacity to enter into this binding agreement and that all registration information you provide is accurate and truthful.</p>
+
+        <!-- 4. Description of Service & License Grant -->
+        <h2>4. Description of Service &amp; License Grant</h2>
+        <p>EduTracker provides a structured mobile platform that enables private educators to:</p>
+        <ul>
+            <li>Organize and manage student batches and individual student rosters;</li>
+            <li>Record fee payments, calculate pending balances, and maintain yearly historical ledgers;</li>
+            <li>Generate customized message reminders and fee receipts for dispatch via WhatsApp or SMS;</li>
+            <li>Store tuition data locally on device (via Hive) and sync across multiple signed-in devices using cloud storage (Firebase Firestore);</li>
+            <li>Secure access to records using device biometric authentication and custom PIN locks.</li>
+        </ul>
+        <p><strong>License:</strong> Subject to your compliance with these Terms, PG Live grants you a personal, worldwide, revocable, non-exclusive, non-transferable, and royalty-free license to install and use the Application on authorized Android devices solely for your tuition management and educational operational purposes.</p>
+
+        <!-- 5. Educator Responsibility & Student Data Warranty -->
+        <h2>5. Educator Responsibility &amp; Student Data Warranty</h2>
+        <p>EduTracker allows educators to record student personal details, such as student names, guardian contact phone numbers, batch names, fee amounts, and payment notes.</p>
+        <ul>
+            <li><strong>Data Controller / Data Fiduciary Role:</strong> You, as the educator or coaching administrator, act as the primary Data Controller / Data Fiduciary with respect to any student or parent personal data you input into your private EduTracker account.</li>
+            <li><strong>Parental Consent Warranty:</strong> Because students enrolled in private tutoring may be minors (under 18 years of age), you expressly represent, warrant, and covenant that you have obtained all necessary lawful authorizations, permissions, or <strong>Verifiable Parental Consent</strong> from parents or legal guardians before storing their information in the Application.</li>
+            <li><strong>Purpose Limitation:</strong> You agree to use student contact information solely for legitimate educational, batch coordination, and fee-reminder communications. You shall not sell, misuse, or distribute student records to unauthorized third parties.</li>
+        </ul>
+
+        <!-- 6. User Accounts & Security -->
+        <h2>6. User Accounts &amp; Security</h2>
+        <ul>
+            <li><strong>Google Sign-In:</strong> Access to cloud sync and backup requires authentication through a valid Google Account. We receive your basic Google profile information (name, email address, profile photo URL) as detailed in our Privacy Policy.</li>
+            <li><strong>Account Security:</strong> You are solely responsible for maintaining the confidentiality of your device, your Google Account credentials, and your in-app PIN lock. You are responsible for all activities that occur under your account.</li>
+            <li><strong>Device Lock:</strong> EduTracker provides optional local security locking (PIN / Biometrics). While this feature helps protect unauthorized physical access on your device, you remain responsible for maintaining proper device-level security controls.</li>
+        </ul>
+
+        <!-- 7. Subscription Plans & In-App Purchases -->
+        <h2>7. Subscription Plans &amp; In-App Purchases (Google Play Billing)</h2>
+        <p>EduTracker provides both free access and optional premium auto-renewing subscription tiers:</p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Feature</th>
+                    <th>Free Tier</th>
+                    <th>EduTracker Premium</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Student Capacity</strong></td>
+                    <td>Limited student limit</td>
+                    <td><strong>Unlimited students</strong></td>
+                </tr>
+                <tr>
+                    <td><strong>Batch Management</strong></td>
+                    <td>Basic batch creation</td>
+                    <td><strong>Full batch management &amp; deletion</strong></td>
+                </tr>
+                <tr>
+                    <td><strong>Advertisements</strong></td>
+                    <td>Ad-supported (Google AdMob)</td>
+                    <td><strong>100% Ad-Free Experience</strong></td>
+                </tr>
+                <tr>
+                    <td><strong>Custom Message Templates</strong></td>
+                    <td>Default template only</td>
+                    <td><strong>Full customization &amp; editing</strong></td>
+                </tr>
+                <tr>
+                    <td><strong>Cloud Backup &amp; Sync</strong></td>
+                    <td>Local offline storage</td>
+                    <td><strong>Automatic Cloud Sync across devices</strong></td>
+                </tr>
+                <tr>
+                    <td><strong>Customer Support</strong></td>
+                    <td>Standard email support</td>
+                    <td><strong>Priority Support</strong></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3>A. Google Play In-App Billing</h3>
+        <p>All subscription purchases, renewals, and payments are processed exclusively and securely through <strong>Google Play In-App Billing</strong>. We do not collect, process, or store credit card, debit card, UPI, or banking information on our servers.</p>
+
+        <h3>B. Auto-Renewal &amp; Billing Cycle</h3>
+        <ul>
+            <li>Subscriptions are billed on a recurring periodic basis (e.g., Monthly or Yearly) as selected at the time of purchase.</li>
+            <li>Payment is charged to your Google Account upon confirmation of purchase.</li>
+            <li>Your subscription automatically renews unless auto-renew is turned off or canceled at least <strong>24 hours before the end of the current billing cycle</strong>.</li>
+            <li>Your account will be charged for renewal within 24 hours prior to the conclusion of the active period at the current plan rate.</li>
+        </ul>
+
+        <h3>C. Free Trials</h3>
+        <p>We may periodically offer promotional free trial periods (e.g., 7 days) for our Premium tier. If you enroll in a free trial, you must cancel the trial at least 24 hours before the trial ends to avoid being charged the standard subscription price. If you do not cancel, the subscription will automatically convert into a paid auto-renewing subscription.</p>
+
+        <h3>D. Cancellation Instructions</h3>
+        <p>You can manage, adjust, or cancel your subscription at any time directly through Google Play. EduTracker also provides a direct in-app cancellation shortcut under <em>Subscribe Screen &gt; Cancel Subscription</em>.</p>
+        <p>To cancel directly on your device:</p>
+        <ol>
+            <li>Open the <strong>Google Play Store</strong> app on your Android device;</li>
+            <li>Tap your profile icon in the top right corner;</li>
+            <li>Tap <strong>Payments &amp; subscriptions</strong> &gt; <strong>Subscriptions</strong>;</li>
+            <li>Select <strong>EduTracker</strong>;</li>
+            <li>Tap <strong>Cancel subscription</strong> and follow the on-screen instructions.</li>
+        </ol>
+        <p>Upon cancellation, you will retain full access to premium features until the end of your already-paid billing period. You will not be billed for subsequent billing cycles.</p>
+
+        <h3>E. Refund Policy</h3>
+        <p>All purchases and subscription fees are non-refundable except where required by applicable law or as permitted under the <strong>Google Play Refund Policy</strong>. If you believe you were charged in error, you may request a refund directly through Google Play customer support within the platform's applicable refund request window.</p>
+
+        <!-- 8. EEA & UK Statutory Consumer Rights -->
+        <h2>8. European Economic Area (EEA) &amp; UK Consumer Rights</h2>
+        <p>If you reside in the European Economic Area (EEA), United Kingdom, or Switzerland, consumer protection regulations provide you with specific rights:</p>
+
+        <h3>A. Right of Withdrawal (Cooling-off Period) Waiver</h3>
+        <p>Under statutory EU and UK consumer law, consumers generally have a 14-day right of withdrawal from distance contracts. However, for digital content and digital in-app subscriptions that are made accessible immediately upon purchase:</p>
+        <div class="info-box">
+            <p>By purchasing a subscription on Google Play, you expressly consent to the immediate provision of the digital service and acknowledge that your statutory 14-day right of withdrawal is waived once access to the digital service commences, consistent with Google Play Terms of Service.</p>
+        </div>
+
+        <h3>B. Statutory Guarantees</h3>
+        <p>Nothing in these Terms excludes or limits your statutory legal guarantees under applicable European or UK consumer protection laws. If the digital service is demonstrably defective, unavailable, or fails to conform to stated specifications, you are entitled to statutory remedies including repair, replacement, or refund from the merchant of record (Google Play).</p>
+
+        <!-- 9. Refer & Earn Program and Promotional Codes -->
+        <h2>9. Refer &amp; Earn Program and Promotional Codes</h2>
+        <ul>
+            <li><strong>Refer &amp; Earn:</strong> Users may invite fellow educators using an individual referral code. Valid installations and sign-ups detected via the Google Play Install Referrer API may grant promotional Premium access reward days to both referrer and referee.</li>
+            <li><strong>Promotional Codes:</strong> Promo codes issued by PG Live grant temporary premium access for a specified duration.</li>
+            <li><strong>Restrictions:</strong> Promotional days and referral rewards carry no monetary or cash value, are strictly non-transferable, cannot be redeemed for fiat currency, and may not be purchased or sold.</li>
+            <li><strong>Abuse:</strong> We reserve the right to void referral rewards, suspend accounts, or revoke premium status if fraudulent referral activity, automated bot installs, or artificial account creation is detected.</li>
+        </ul>
+
+        <!-- 10. Advertisements & Third-Party Services -->
+        <h2>10. Advertisements &amp; Third-Party Services</h2>
+        <ul>
+            <li><strong>AdMob Advertising:</strong> The free tier of EduTracker displays advertisements delivered through Google AdMob (banner ads, interstitial ads, and rewarded video ads). Advertisements are completely removed for active Premium subscribers.</li>
+            <li><strong>Firebase Infrastructure:</strong> Cloud authentication, database storage, and push notifications are powered by Google Firebase. Use of these services is subject to Google's Privacy Policy.</li>
+            <li><strong>WhatsApp Integration:</strong> EduTracker provides formatting tools to compose fee receipts and messages that open in the user's installed WhatsApp application. EduTracker is an independent tool and is not endorsed by, sponsored by, or affiliated with WhatsApp LLC or Meta Platforms, Inc.</li>
+        </ul>
+
+        <!-- 11. Acceptable Use Policy & Prohibitions -->
+        <h2>11. Acceptable Use Policy &amp; Prohibitions</h2>
+        <p>When using EduTracker, you agree not to:</p>
+        <ul>
+            <li>Reverse-engineer, decompile, disassemble, modify, or attempt to derive the source code of the Application;</li>
+            <li>Circumvent, disable, bypass, or manipulate security features, subscription verifications, or ad-delivery mechanisms;</li>
+            <li>Use the Application for any unlawful, fraudulent, defamatory, or harassing purpose;</li>
+            <li>Transmit unsolicited spam, commercial advertising, or chain letters via WhatsApp or SMS using student contacts stored in the app;</li>
+            <li>Introduce viruses, trojans, worms, or other malicious software intended to damage the Application or Firebase infrastructure;</li>
+            <li>Impersonate any person, tutor, or entity, or falsely misrepresent your credentials.</li>
+        </ul>
+
+        <!-- 12. Intellectual Property Rights -->
+        <h2>12. Intellectual Property Rights</h2>
+        <p>All intellectual property rights in EduTracker—including but not limited to the software code, database architecture, visual graphics, UI design, icons, logos, and written documentation—are and remain the exclusive property of <strong>PG Live</strong> and its licensors. You are not granted any rights in or to our trademarks, logos, or brand assets without prior written consent.</p>
+
+        <!-- 13. Account Deletion & Data Erasure -->
+        <h2>13. Account Deletion &amp; Data Erasure</h2>
+        <p>In compliance with Google Play Developer Policies and data protection standards, EduTracker includes a permanent in-app account deletion feature:</p>
+        <ul>
+            <li>You can permanently delete your account and all associated cloud data at any time via <strong>Dashboard &gt; Profile Menu &gt; Delete Account</strong>.</li>
+            <li>Upon confirming account deletion, your cloud-stored student records, batch schedules, payment histories, and Firebase profile data are permanently erased from our servers.</li>
+            <li>This action is irreversible. You are advised to export any necessary PDF reports or ledgers prior to deleting your account.</li>
+        </ul>
+
+        <!-- 14. Disclaimer of Warranties ("AS IS") -->
+        <h2>14. Disclaimer of Warranties ("AS IS")</h2>
+        <p>EduTracker is provided on an <strong>"AS IS"</strong> and <strong>"AS AVAILABLE"</strong> basis without warranties of any kind, whether express, implied, statutory, or otherwise, including but not limited to implied warranties of merchantability, fitness for a particular purpose, non-infringement, or data accuracy.</p>
+        <p>While we make every reasonable effort to maintain high availability and accurate fee calculations, we do not warrant that:</p>
+        <ul>
+            <li>The Application will operate continuously, uninterrupted, or entirely error-free;</li>
+            <li>Defects or software bugs will be corrected immediately;</li>
+            <li>Data stored locally or synced via the cloud will never experience transmission latency or hardware-related loss.</li>
+        </ul>
+        <p>Educators are encouraged to maintain independent verification of critical financial records and regularly export PDF payment receipts.</p>
+
+        <!-- 15. Limitation of Liability -->
+        <h2>15. Limitation of Liability</h2>
+        <p>To the maximum extent permitted by applicable law, in no event shall <strong>PG Live</strong>, its developers, affiliates, or service providers be liable for any indirect, incidental, special, consequential, exemplary, or punitive damages—including but not limited to loss of profits, loss of tuition revenue, loss of business goodwill, loss of student data, device downtime, or communication failures—arising out of or related to your use of or inability to use the Application.</p>
+        <p>In all circumstances, our total aggregate liability for any claims arising under these Terms shall not exceed the total amount paid by you to us through Google Play for the Application during the twelve (12) months immediately preceding the event giving rise to the claim, or INR ₹1,000 (whichever is greater).</p>
+
+        <!-- 16. Indemnification -->
+        <h2>16. Indemnification</h2>
+        <p>You agree to indemnify, defend, and hold harmless PG Live and its developer from and against any third-party claims, liabilities, damages, losses, and expenses (including reasonable legal fees) arising out of or in any way connected with: (a) your access to or use of the Application; (b) your violation of these Terms; (c) any student or guardian dispute regarding tuition fees or data entered by you; or (d) your violation of any third-party rights, including privacy rights or intellectual property rights.</p>
+
+        <!-- 17. Governing Law & Dispute Resolution -->
+        <h2>17. Governing Law &amp; Dispute Resolution</h2>
+        <p>These Terms shall be governed by, construed, and enforced in accordance with the laws of <strong>India</strong>, without regard to conflict of law principles. Any legal suit, action, or proceeding arising out of or related to these Terms or the Application shall be instituted exclusively in the competent courts located in <strong>West Bengal, India</strong>.</p>
+        <p><em>For European Union and UK consumers:</em> Mandatory consumer protection laws of your country of habitual residence remain unaffected by this choice of law clause.</p>
+
+        <!-- 18. Changes to These Terms -->
+        <h2>18. Changes to These Terms</h2>
+        <p>We reserve the right to revise, update, or modify these Terms of Service at any time to reflect updates to our services, regulatory requirements, or Google Play policy updates. When changes occur:</p>
+        <ul>
+            <li>We will update the "Last Updated" date at the top of this webpage;</li>
+            <li>We may provide prominent in-app notice for material modifications;</li>
+            <li>Your continued use of EduTracker following the posting of revised Terms constitutes your acceptance of the revised Terms.</li>
+        </ul>
+
+        <!-- 19. Contact & Grievance Redressal -->
+        <h2>19. Contact Us &amp; Grievance Redressal</h2>
+        <p>If you have any questions, feedback, legal inquiries, or grievance redressal requests regarding these Terms of Service, please contact our support team:</p>
+
+        <div class="info-box">
+            <p><strong>Developer / Trader:</strong> PG Live</p>
+            <p><strong>Individual Operator:</strong> Prasanta Garai</p>
+            <p><strong>Support &amp; Legal Email:</strong> <a href="mailto:prasantagaraidgp7@gmail.com">prasantagaraidgp7@gmail.com</a></p>
+            <p><strong>Alternate Contact:</strong> <a href="mailto:edutrackerbypg@gmail.com">edutrackerbypg@gmail.com</a></p>
+            <p><strong>In-App Support:</strong> Available via <em>Settings &gt; Report Problem</em></p>
+            <p><strong>Response Time:</strong> We aim to acknowledge and address all inquiries within 30 days.</p>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2026 PG Live. All rights reserved.</p>
+            <p style="margin-top: 6px;">EduTracker – Smart Tuition &amp; Student Fee Management</p>
+            <p style="margin-top: 10px;">
+                <a href="index.html">Privacy Policy</a> &nbsp;•&nbsp; 
+                <a href="terms.html">Terms of Service</a> &nbsp;•&nbsp; 
+                <a href="mailto:prasantagaraidgp7@gmail.com">Support</a>
+            </p>
+        </footer>
+
+    </div>
+</body>
+</html>
